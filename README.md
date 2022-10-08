@@ -29,7 +29,7 @@ Routes
 
 All HTTP methods are supported. You can use http or https for your requests.
 
-*   GET [/products](/products)
+*   GET &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [/products](/products)
 *   GET &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /products/:id
     
 *   POST &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /products
@@ -38,7 +38,7 @@ All HTTP methods are supported. You can use http or https for your requests.
     
 *   DELETE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /products/:id
     
-*   GET [/categories](/categories)
+*   GET &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [/categories](/categories)
 *   GET &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /categories/:id
     
 *   GET &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /categories/:id/products
@@ -49,7 +49,7 @@ All HTTP methods are supported. You can use http or https for your requests.
     
 *   DELETE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /categories/:id
     
-*   GET [/commands](/commands)
+*   GET &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; [/commands](/commands)
 *   GET &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /commands/:id
     
 *   GET &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /commands/:id/products
