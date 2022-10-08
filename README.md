@@ -63,4 +63,4 @@ All HTTP methods are supported. You can use http or https for your requests.
 *   DELETE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /commands/:id
     
 
-[You can See this Project an Others on Github 💗](https://github.com/medbendadi)
+[You can See this Project and Others on Github 💗](https://github.com/medbendadi/ReactShopApi)
