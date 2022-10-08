@@ -30,37 +30,37 @@ Routes
 All HTTP methods are supported. You can use http or https for your requests.
 
 *   GET [/products](/products)
-*   GET  /products/:id
+*   GET        /products/:id
     
-*   POST  /products
+*   POST       /products
     
-*   PUT  /products/:id
+*   PUT        /products/:id
     
-*   DELETE  /products/:id
+*   DELETE     /products/:id
     
 *   GET [/categories](/categories)
-*   GET  /categories/:id
+*   GET        /categories/:id
     
-*   GET  /categories/:id/products
+*   GET        /categories/:id/products
     
-*   POST  /categories
+*   POST       /categories
     
-*   PUT  /categories/:id
+*   PUT        /categories/:id
     
-*   DELETE  /categories/:id
+*   DELETE     /categories/:id
     
 *   GET [/commands](/commands)
-*   GET /commands/:id
+*   GET        /commands/:id
     
-*   GET /commands/:id/products
+*   GET        /commands/:id/products
     
-*   POST  /commands
+*   POST       /commands
     
-*   PUT  /commands/:id
+*   PUT        /commands/:id
     
-*   PUT  /commands/:id/status
+*   PUT        /commands/:id/status
     
-*   DELETE  /commands/:id
+*   DELETE     /commands/:id
     
 
 [You can See this Project an Others on Github 💗](https://github.com/medbendadi)
