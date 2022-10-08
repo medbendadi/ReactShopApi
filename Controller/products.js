@@ -12,21 +12,21 @@ var myObject = data;
 const { v4 } = require('uuid')
 
 const getAllProducts = (req, res) => {
-   res.json(myObject)
+   res.json(myObject['products'])
    // res.send("Hello")
 }
 
 
 const getOneProduct = (req, res) => {
    const { id } = req.params
-   const selectedItem = products.filter((prod) => prod.id == id)
-   res.send(selectedItem)
+   const selectedItem = myObject['products'].filter((prod) => prod.id == id)
+   res.send(selectedItem[1])
 }
 
 
 const AddProduct = (req, res) => {
-   const { title, status } = req.body
-   const newProd = { id: v4(5).split('-')[0], title, status }
+   const { title, price, stock, categoryID } = req.body
+   const newProd = { id: v4(5).split('-')[0], title, price, stock, categoryID: 1 }
    myObject["products"].push(newProd);
    var newData = JSON.stringify(myObject, null, 3);
    fs.writeFile('./data/data.json', newData, err => {
@@ -35,6 +35,30 @@ const AddProduct = (req, res) => {
       console.log("New data added");
    });
    res.send(newData);
+}
+
+const UpdateProduct = (req, res) => {
+   const { id } = req.params
+   const { title, price, stock, categoryID } = req.body
+
+   if (!(title && price && stock && categoryID)) return res.send("invalid Inputs")
+
+   myObject["products"].forEach((prod) => {
+      if (prod.id === id) {
+         prod.title = title
+         prod.price = price
+         prod.stock = stock
+         prod.categoryID = categoryID
+      }
+   })
+   var newData = JSON.stringify(myObject, null, 3);
+   fs.writeFile('./data/data.json', newData, err => {
+      if (err) throw err;
+
+      console.log("Data updated");
+   });
+   res.send(newData);
+
 }
 
 
@@ -51,4 +75,4 @@ const DeleteProduct = (req, res) => {
    res.send(myObject);
 }
 
-module.exports = { getAllProducts, getOneProduct, AddProduct, DeleteProduct }
+module.exports = { getAllProducts, getOneProduct, AddProduct, DeleteProduct, UpdateProduct }

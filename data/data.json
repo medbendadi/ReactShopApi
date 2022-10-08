@@ -3,27 +3,54 @@
       {
          "id": "kmclsm20",
          "title": "S2",
-         "status": false
+         "price": 4000,
+         "stock": 120,
+         "image": "download__1_-removebg-preview.png",
+         "description": "Lorem ipsum dolor sit amet. Qui quasi pariatur non voluptate libero qui laudantium blanditiis quo dicta odit ad velit quia sit amet odio. Non neque consectetur cum unde vitae vel fugiat illo.",
+         "categoryID": "1"
       },
       {
-         "id": "55fff032",
-         "title": "ll",
-         "status": false
+         "id": "3ab99740",
+         "title": "hhh",
+         "price": 2000,
+         "stock": 320,
+         "image": "download__1_-removebg-preview.png",
+         "description": "Lorem ipsum dolor sit amet. Qui quasi pariatur non voluptate libero qui laudantium blanditiis quo dicta odit ad velit quia sit amet odio. Non neque consectetur cum unde vitae vel fugiat illo.",
+         "categoryID": "1"
       },
       {
-         "id": "421e1304",
-         "title": "ll",
-         "status": false
-      },
+         "id": "b3114a42",
+         "title": "tst",
+         "price": 4500,
+         "stock": 120,
+         "image": "download__1_-removebg-preview.png",
+         "description": "Lorem ipsum dolor sit amet. Qui quasi pariatur non voluptate libero qui laudantium blanditiis quo dicta odit ad velit quia sit amet odio. Non neque consectetur cum unde vitae vel fugiat illo.",
+         "categoryID": "1"
+      }
+   ],
+   "categories": [
       {
-         "id": "4ff09331",
-         "title": "ll",
-         "status": false
-      },
+         "id": 1,
+         "name": "Ordinateurs",
+         "color": "#fff"
+      }
+   ],
+   "commands": [
       {
-         "id": "6f85e41e",
-         "title": "jj",
-         "status": false
+         "id": 1,
+         "client_name": "med",
+         "telephone": "0612121212",
+         "address": "tantan",
+         "products": [
+            {
+               "id": "3ab99740",
+               "quantity": 10
+            },
+            {
+               "id": "b3114a42",
+               "quantity": 2
+            }
+         ]
       }
    ]
 }

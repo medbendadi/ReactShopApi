@@ -1,17 +1,26 @@
-[
-   {
-      "id": "kmclsm20",
-      "title": "S2",
-      "status": false
-   },
-   {
-      "id": "3ab99740",
-      "title": "hhh",
-      "status": false
-   },
-   {
-      "id": "b3114a42",
-      "title": "ssss",
-      "status": false
-   }
-]
+{
+   "products":
+   [
+      {
+         "id": "kmclsm20",
+         "title": "S2",
+         "price": 4000,
+         "stock": 120,
+         "categoryID": "1"
+      },
+      {
+         "id": "3ab99740",
+         "title": "hhh",
+         "price": 2000,
+         "stock": 320,
+         "categoryID": "1"
+      },
+      {
+         "id": "b3114a42",
+         "title": "ssss",
+         "price": 12000,
+         "stock": 100,
+         "categoryID": "1"
+      }
+   ]
+}
