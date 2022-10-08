@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+   <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+   <title>API</title>
+
+   <style>
+      *, body{
+         margin: 0;
+         padding: 0;
+         box-sizing: border-box;
+      }
+      .header{
+         /* background-color: lightblue; */
+         text-align: left;
+      }
+      .container {
+         padding: 20px;
+      }
+      .container h1 {
+         margin: 2rem 1rem;
+         font-size: 4rem;
+      }
+      .container h3 {
+         margin: 1rem;
+         font-size: 1.5rem;
+      }
+      .container h4 {
+         margin: 1rem;
+         /* font-size: 1.5rem; */
+      }
+      .hljs {
+         border-radius: 4px;
+         padding: .7rem !important;
+      }
+      ul{
+         list-style: none;
+         margin-left: 30px;
+      }
+      li{
+         margin: 20px;
+         width: 300px;
+         display: flex;
+         text-align: left;
+         align-items: center;
+         justify-content: space-between;
+      }
+   </style>
+</head>
+
+<body>
+   <div class="header">
+      <div class="container">
+         <h1>Welcome to DD API</h1>
+         <h3>Reset API for React Shop Admin APP</h3>
+         <h4>Powered By <a class="text-primary" href="https://nodejs.org/en/" target="_blank">NodeJS</a> + <a
+               href="https://expressjs.com/" class="text-primary" target="_blank">ExpressJS</a></h4>
+      </div>
+   </div>
+   <div class="codeContainer container">
+      <h2>How to use:</h2>
+      <pre><code class="hljs language-js">fetch('https://dd-shop.herokuapp.com/categories')
+         .then(response => response.json())
+         .then(json => console.log(json))</code></pre>
+   </div>
+   <div class="container">
+      <h2>Resources</h2>
+      <p>this API comes with a set of 4 common resources:</p>
+      <ul>
+         <li><a href="/products">/products</a> <span>Get All Products</span></li>
+         <li><a href="/categories">/categories</a> <span>Get All Categories</span></li>
+         <li><a href="#">/commands</a> <span>Get All commands</span></li>
+         <li><a href="#">/users</a> <span>Get All Users</span></li>
+      </ul>
+      <p><b>Note:</b> resources have relations. For example: category have many products, command have many products</p>
+   </div>
+   <div class="container">
+      <h2>Routes</h2>
+      <p>All HTTP methods are supported. You can use http or https for your requests.</p>
+
+      <ul>
+         <li><span>GET</span> <a href="/products">/products</a></li>
+         <li><span>POST</span> <p>/products</p></li>
+         <li><span>PUT</span> <p>/products/1</p></li>
+         <li><span>DELETE</span> <p>/products/1</p></li>
+         <li><span>GET</span> <a href="/categories">/categories</a></li>
+         <li><span>POST</span> <p>/categories</p></li>
+         <li><span>PUT</span> <p>/categories/1</p></li>
+         <li><span>DELETE</span> <p>/categories/1</p></li>
+      </ul>
+   </div>
+
+   <div class="container">
+      <a href="https://github.com/medbendadi" target="_blank">You can See this Project an Others on Github 💗</a>
+   </div>
+
+
+   <link href="https://unpkg.com/highlightjs-badge/highlightjs/styles/vs2015.css" rel="stylesheet">
+   <script src="https://unpkg.com/highlightjs-badge/highlightjs/highlight.pack.js"></script>
+
+   <script src="https://unpkg.com/highlightjs-badge/highlightjs-badge.min.js"></script>
+   <script>
+      setTimeout(function () {
+         var pres = document.querySelectorAll("pre>code");
+         for (var i = 0; i < pres.length; i++) {
+            hljs.highlightBlock(pres[i]);
+         }
+         var options = {
+            contentSelector: ".codeContainer",
+            loadDelay: 0,
+
+            copyIconClass: "fa fa-copy",
+            checkIconClass: "fa fa-check text-success",
+
+            onBeforeTextCopied: function (text, codeElement) {
+               return text;
+            }
+         };
+         window.highlightJsBadge(options);
+      }, 10);
+   </script>
+</body>
+
+</html>
