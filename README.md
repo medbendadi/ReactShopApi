@@ -30,7 +30,7 @@ Routes
 All HTTP methods are supported. You can use http or https for your requests.
 
 *   GET [/products](/products)
-*   GET &nbsp;        /products/:id
+*   GET &nbsp; &nbsp; &nbsp;        /products/:id
     
 *   POST &nbsp;       /products
     
