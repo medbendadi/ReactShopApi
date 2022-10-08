@@ -26,7 +26,7 @@ const getOneProduct = (req, res) => {
 
 const AddProduct = (req, res) => {
    const { title, price, stock, categoryID } = req.body
-   const newProd = { id: v4(5).split('-')[0], title, price, stock, categoryID: 1 }
+   const newProd = { id: v4(5).split('-')[0], title, price, stock, categoryID }
    myObject["products"].push(newProd);
    var newData = JSON.stringify(myObject, null, 3);
    fs.writeFile('./data/data.json', newData, err => {
@@ -34,7 +34,7 @@ const AddProduct = (req, res) => {
 
       console.log("New data added");
    });
-   res.send(newData);
+   res.send(newProd);
 }
 
 const UpdateProduct = (req, res) => {
@@ -57,7 +57,7 @@ const UpdateProduct = (req, res) => {
 
       console.log("Data updated");
    });
-   res.send(newData);
+   res.send(myObject['products']);
 
 }
 
@@ -72,7 +72,7 @@ const DeleteProduct = (req, res) => {
 
       console.log("Delete product with id: " + id);
    });
-   res.send(myObject);
+   res.send(myObject['products']);
 }
 
 module.exports = { getAllProducts, getOneProduct, AddProduct, DeleteProduct, UpdateProduct }

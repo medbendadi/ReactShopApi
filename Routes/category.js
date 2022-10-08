@@ -1,5 +1,5 @@
 const express = require('express');
-const { getAllCategories, getOneCategory, AddCategory, UpdateCategory, DeleteCategory } = require('../Controller/category')
+const { getAllCategories, getOneCategory, AddCategory, UpdateCategory, DeleteCategory, getCategoryProducts } = require('../Controller/category')
 
 
 
@@ -13,6 +13,10 @@ router.get("/categories", getAllCategories);
 
 // Get One Category
 router.get("/categories/:id", getOneCategory);
+
+
+// Get One Category
+router.get("/categories/:id/products", getCategoryProducts);
 
 
 // Add Product

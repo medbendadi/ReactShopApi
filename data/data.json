@@ -41,6 +41,7 @@
          "client_name": "med",
          "telephone": "0612121212",
          "address": "tantan",
+         "status": "Traitée",
          "products": [
             {
                "id": "3ab99740",
@@ -51,6 +52,19 @@
                "quantity": 2
             }
          ]
+      },
+      {
+         "id": "f197538b",
+         "client_name": "med",
+         "telephone": "0612121212",
+         "address": "tantan",
+         "products": [
+            {
+               "id": "3ab99740",
+               "quantity": 12
+            }
+         ],
+         "status": "Traitée"
       }
    ]
 }

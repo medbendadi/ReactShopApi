@@ -4,6 +4,7 @@ const app = express();
 const path = require("path")
 const productsRoutes = require('./Routes/products')
 const categoriesRoutes = require('./Routes/category')
+const commandsRoutes = require('./Routes/commands')
 const router = express.Router();
 
 app.use(bodyParser.json());
@@ -14,6 +15,7 @@ app.set('json spaces', 3);
 
 app.use('/', productsRoutes)
 app.use('/', categoriesRoutes)
+app.use('/', commandsRoutes)
 
 
 router.get('/', function (req, res) {

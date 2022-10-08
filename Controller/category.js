@@ -18,9 +18,16 @@ const getAllCategories = (req, res) => {
 
 const getOneCategory = (req, res) => {
    const { id } = req.params
-   const selectedItem = myObject['categories'].filter((prod) => prod.id == id)
+   const selectedItem = myObject['categories'].filter((item) => item.id == id)
 
-   const selectedProducts = myObject['products'].filter((prod) => prod.categoryID == selectedItem[0].id)
+   res.send(selectedItem)
+}
+
+const getCategoryProducts = (req, res) => {
+   const { id } = req.params
+   const selectedItem = myObject['categories'].filter((item) => item.id == id)
+
+   const selectedProducts = myObject['products'].filter((item) => item.categoryID == selectedItem[0].id)
 
    res.send(selectedProducts)
 }
@@ -38,7 +45,7 @@ const AddCategory = (req, res) => {
 
       console.log("New data added");
    });
-   res.send(newData);
+   res.send(newProd);
 }
 
 const UpdateCategory = (req, res) => {
@@ -48,10 +55,10 @@ const UpdateCategory = (req, res) => {
 
    if (!(name && color)) return res.send("invalid Inputs")
 
-   myObject["categories"].forEach((prod) => {
-      if (prod.id == id) {
-         prod.name = name
-         prod.color = color
+   myObject["categories"].forEach((item) => {
+      if (item.id == id) {
+         item.name = name
+         item.color = color
       }
    })
    var newData = JSON.stringify(myObject, null, 3);
@@ -60,14 +67,14 @@ const UpdateCategory = (req, res) => {
 
       console.log("Data updated");
    });
-   res.send(newData);
+   res.send(myObject['categories']);
 
 }
 
 
 const DeleteCategory = (req, res) => {
    const { id } = req.params
-   const newList = myObject["categories"].filter((prod) => prod.id != id)
+   const newList = myObject["categories"].filter((item) => item.id != id)
    myObject["categories"] = newList
    var newData = JSON.stringify(myObject, null, 3);
    fs.writeFile('./data/data.json', newData, err => {
@@ -75,7 +82,7 @@ const DeleteCategory = (req, res) => {
 
       console.log("Delete product with id: " + id);
    });
-   res.send(myObject);
+   res.send(myObject['categories']);
 }
 
-module.exports = { getAllCategories, getOneCategory, AddCategory, DeleteCategory, UpdateCategory }
+module.exports = { getAllCategories, getOneCategory, AddCategory, DeleteCategory, UpdateCategory, getCategoryProducts }
