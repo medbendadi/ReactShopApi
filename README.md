@@ -30,37 +30,37 @@ Routes
 All HTTP methods are supported. You can use http or https for your requests.
 
 *   GET [/products](/products)
-*   GET &nbsp; &nbsp; &nbsp;        /products/:id
+*   GET &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /products/:id
     
-*   POST &nbsp;       /products
+*   POST &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /products
     
-*   PUT &nbsp;        /products/:id
+*   PUT &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /products/:id
     
-*   DELETE &nbsp;     /products/:id
+*   DELETE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /products/:id
     
 *   GET [/categories](/categories)
-*   GET &nbsp;        /categories/:id
+*   GET &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /categories/:id
     
-*   GET &nbsp;        /categories/:id/products
+*   GET &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /categories/:id/products
     
-*   POST &nbsp;       /categories
+*   POST &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /categories
     
-*   PUT &nbsp;        /categories/:id
+*   PUT &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /categories/:id
     
-*   DELETE &nbsp;     /categories/:id
+*   DELETE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /categories/:id
     
 *   GET [/commands](/commands)
-*   GET &nbsp;        /commands/:id
+*   GET &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /commands/:id
     
-*   GET &nbsp;        /commands/:id/products
+*   GET &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /commands/:id/products
     
-*   POST &nbsp;       /commands
+*   POST &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /commands
     
-*   PUT &nbsp;        /commands/:id
+*   PUT &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /commands/:id
     
-*   PUT &nbsp;        /commands/:id/status
+*   PUT &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /commands/:id/status
     
-*   DELETE &nbsp;     /commands/:id
+*   DELETE &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; /commands/:id
     
 
 [You can See this Project an Others on Github 💗](https://github.com/medbendadi)
