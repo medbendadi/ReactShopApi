@@ -25,9 +25,11 @@ const getOneCategory = (req, res) => {
 
 const getCategoryProducts = (req, res) => {
    const { id } = req.params
-   const selectedItem = myObject['categories'].filter((item) => item.id == id)
+   var data = JSON.parse(fs.readFileSync(jsonPath));
+   var object = data;
+   const selectedItem = object['categories'].filter((item) => item.id == id)
 
-   const selectedProducts = myObject['products'].filter((item) => item.categoryID == selectedItem[0].id)
+   const selectedProducts = object['products'].filter((item) => item.categoryID == selectedItem[0].id)
 
    res.send(selectedProducts)
 }
