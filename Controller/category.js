@@ -18,7 +18,7 @@ const getAllCategories = (req, res) => {
 
 const getOneCategory = (req, res) => {
    const { id } = req.params
-   const selectedItem = myObject['categories'].filter((item) => item.id == id)
+   const selectedItem = myObject['categories'].filter((item) => item.id == id)[0]
 
    res.send(selectedItem)
 }
