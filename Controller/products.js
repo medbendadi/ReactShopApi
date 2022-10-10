@@ -25,8 +25,8 @@ const getOneProduct = (req, res) => {
 
 
 const AddProduct = (req, res) => {
-   const { title, price, stock, categoryID } = req.body
-   const newProd = { id: v4(5).split('-')[0], title, price, stock, categoryID }
+   const { title, price, stock, categoryID, image } = req.body
+   const newProd = { id: v4(5).split('-')[0], title, price, stock, categoryID, image }
    myObject["products"].push(newProd);
    var newData = JSON.stringify(myObject, null, 3);
    fs.writeFile('./data/data.json', newData, err => {
