@@ -43,12 +43,14 @@ const UpdateProduct = (req, res) => {
 
    if (!(title && price && stock && categoryID)) return res.send("invalid Inputs")
 
+   let newProd = {}
    myObject["products"].forEach((prod) => {
       if (prod.id === id) {
          prod.title = title
          prod.price = price
          prod.stock = stock
          prod.categoryID = categoryID
+         newProd = prod
       }
    })
    var newData = JSON.stringify(myObject, null, 3);
@@ -57,7 +59,7 @@ const UpdateProduct = (req, res) => {
 
       console.log("Data updated");
    });
-   res.send(myObject['products']);
+   res.send(newProd);
 
 }
 

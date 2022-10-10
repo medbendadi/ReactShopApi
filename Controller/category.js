@@ -55,10 +55,13 @@ const UpdateCategory = (req, res) => {
 
    if (!(name && color)) return res.send("invalid Inputs")
 
+   let newCategory = {}
+
    myObject["categories"].forEach((item) => {
       if (item.id == id) {
          item.name = name
          item.color = color
+         newCategory = item
       }
    })
    var newData = JSON.stringify(myObject, null, 3);
@@ -67,7 +70,7 @@ const UpdateCategory = (req, res) => {
 
       console.log("Data updated");
    });
-   res.send(myObject['categories']);
+   res.send(newCategory);
 
 }
 
