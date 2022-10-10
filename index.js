@@ -6,7 +6,9 @@ const productsRoutes = require('./Routes/products')
 const categoriesRoutes = require('./Routes/category')
 const commandsRoutes = require('./Routes/commands')
 const router = express.Router();
+var cors = require('cors')
 
+app.use(cors())
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
