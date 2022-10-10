@@ -1,31 +1,28 @@
 {
    "products": [
       {
-         "id": "kmclsm20",
-         "title": "S2",
-         "price": 4000,
-         "stock": 120,
-         "image": "download__1_-removebg-preview.png",
-         "description": "Lorem ipsum dolor sit amet. Qui quasi pariatur non voluptate libero qui laudantium blanditiis quo dicta odit ad velit quia sit amet odio. Non neque consectetur cum unde vitae vel fugiat illo.",
-         "categoryID": "1"
+         "id": "52aae431",
+         "title": "Gaming Laptop GL702",
+         "price": 13000,
+         "stock": 30,
+         "categoryID": "1",
+         "image": "https://p7.hiclipart.com/preview/889/642/445/gaming-laptop-gl702-intel-core-i7-laptop.jpg"
       },
       {
-         "id": "3ab99740",
-         "title": "hhh",
-         "price": 2000,
-         "stock": 320,
-         "image": "download__1_-removebg-preview.png",
-         "description": "Lorem ipsum dolor sit amet. Qui quasi pariatur non voluptate libero qui laudantium blanditiis quo dicta odit ad velit quia sit amet odio. Non neque consectetur cum unde vitae vel fugiat illo.",
-         "categoryID": "1"
+         "id": "3cbb5a22",
+         "title": "Asus Gaming Laptop",
+         "price": 15000,
+         "stock": 10,
+         "categoryID": "1",
+         "image": "https://p7.hiclipart.com/preview/809/528/1003/laptop-republic-of-gamers-notebook-gl-series-gl552-intel-core-i7-asus-laptop.jpg"
       },
       {
-         "id": "b3114a42",
-         "title": "tst",
-         "price": 4500,
-         "stock": 120,
-         "image": "download__1_-removebg-preview.png",
-         "description": "Lorem ipsum dolor sit amet. Qui quasi pariatur non voluptate libero qui laudantium blanditiis quo dicta odit ad velit quia sit amet odio. Non neque consectetur cum unde vitae vel fugiat illo.",
-         "categoryID": "1"
+         "id": "e37fac7c",
+         "title": "Laptop Hewlett-Packard HP OMEN 15-ce000",
+         "price": 21000,
+         "stock": 20,
+         "categoryID": "1",
+         "image": "https://p7.hiclipart.com/preview/782/543/819/laptop-hewlett-packard-hp-omen-15-ce000-series-intel-core-i7-computer-laptop.jpg"
       }
    ],
    "categories": [
